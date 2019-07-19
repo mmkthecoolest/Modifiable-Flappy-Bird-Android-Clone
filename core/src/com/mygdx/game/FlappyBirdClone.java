@@ -183,6 +183,9 @@ public class FlappyBirdClone extends ApplicationAdapter {
                 pipeX[i] = pipeStartDistance + Gdx.graphics.getWidth() + (i * pipesDistance);
             }
 
+            groundX[0] = 0;
+            groundX[1] = Gdx.graphics.getWidth();
+
             birdY = (float) ((Gdx.graphics.getHeight() - birds[index].getHeight()) / 2.0);
             downwardVelocity = 0;
             score = 0;
